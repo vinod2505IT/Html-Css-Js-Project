@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    background-color: #41b3a3;
+}
+input{
+    border: 1px solid  #f2f2f2;
+    padding: 10px;
+    background-color:  #f2f2f2;
+    margin-left: 20px;
+    outline: none;
+}
+.btn{
+    margin: 20px;
+    position: relative;
+    left: 80px;
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #41b3a3;
+    color: white;
+    border-radius: 10px;
+}
+.Block{
+    padding: 50px;
+    position: relative;
+    top:170px;
+    left: 29%;
+    background-color: #c38d9e;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 300px;
+}
+.output{
+    text-align: center;
+    padding-top: 0;
+    padding: 20px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    position: relative;
+    bottom:30px;
+    font-weight: bold   ;
+}
+@media all and (max-width: 600px){
+    .Block{
+        position: absolute;
+        top: 180px;
+        left: 70px;
+    }
+    .output{
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media all and (max-width: 500px){
+    .Block{
+        position: absolute;
+        top: 180px;
+        left: 50px;
+    }
+    .output{
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .Block{
+       margin: 0;
+
+    }  
+}
+
+
+@media all and (max-width: 360px){
+    .Block{
+        position: absolute;
+        top: 130px;
+        left: 20px;
+        width: 220px;
+    }
+    .output{
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+    }
+    label{
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    label,input{
+        display: inline;
+    }
+    .btn{
+        margin:10px;
+        margin-left: 15px;
+        margin-top: 10px;
+        text-align: center;
+        position: relative;
+        right: 50px;
+        left: 5px;
+
+        /* width: 80px; */
+    }
+}
