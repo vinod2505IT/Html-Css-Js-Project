@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rotating Navbar</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <h1>My Article</h1>
+        <small>Vinod T.H</small>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          alias voluptas rem reiciendis. Tempore blanditiis quae asperiores
+          aperiam saepe molestias sit porro aliquid voluptatibus ea magni
+          incidunt rerum dolores, consectetur fugiat autem tempora aspernatur
+          cupiditate eveniet laudantium ipsam doloremque optio facere. Dolor
+          quasi dolores nemo! Iure, possimus ipsa! Magnam aperiam minima
+          corrupti dolorum, amet quisquam quam perferendis. Temporibus magnam
+          tempore incidunt maiores non beatae blanditiis sapiente aperiam
+          tempora facere ea possimus dignissimos ullam maxime enim eos
+          reiciendis assumenda, autem mollitia quaerat dolorum provident minima.
+          Natus quis porro enim quasi pariatur ratione labore, mollitia, facilis
+          sint rem eveniet corrupti, laboriosam assumenda.
+        </p>
+
+        <h3>My Dogs</h3>
+        <img src="My Dog.jpg" alt="dogs" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+          dignissimos est deserunt repellendus voluptatum voluptas vero
+          recusandae dolor temporibus corrupti sunt esse perferendis vitae, quis
+          magni natus deleniti similique atque nam nihil nobis quae. Nihil
+          laudantium labore odio quam ad corrupti praesentium enim pariatur
+          deserunt neque natus voluptate, ipsam animi sed eveniet nobis vitae
+          quae consectetur aspernatur sunt ducimus doloremque soluta tenetur!
+          Aperiam nesciunt optio, commodi inventore, sunt unde expedita porro
+          blanditiis, dignissimos laudantium deleniti!
+        </p>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i>Home</li>
+        <li><i class="fas fa-user-alt"></i>About</li>
+        <li><i class="fas fa-envelope"></i>Contact</li>
+      </ul>
+    </nav>
+    <script>
+      const open = document.getElementById("open");
+      const close = document.getElementById("close");
+      const container = document.querySelector(".container");
+
+      open.addEventListener("click", () => container.classList.add("show-nav"));
+
+      close.addEventListener("click", () =>
+        container.classList.remove("show-nav")
+      );
+    </script>
+  </body>
+</html>
