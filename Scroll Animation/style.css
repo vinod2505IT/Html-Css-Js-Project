@@ -1,0 +1,49 @@
+/* Reset  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 10px;
+}
+body {
+  font-family: "Stint Ultra Condensed", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: calc(1rem + 1.56vw);
+  font-family: "Sigmar One", cursive;
+  margin: 10px;
+}
+
+.box {
+  background-image: linear-gradient(135deg, #97abff 10%, #123597 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+}
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: calc(2rem + 1.56vw);
+  letter-spacing: 2.5px;
+}
