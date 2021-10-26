@@ -17,6 +17,7 @@
 :root {
   font-size: 62.5%;
   /* ********** Custom Properties ************ */
+  /*Color Change*/
   /* Main Color */
   --primary-color: #014d4e;
 
@@ -155,6 +156,7 @@ ul.header__main-nav--links li a:active::after {
 /* ************************** Showcase / Hero Section *************************** */
 section#showcase {
   height: 100vh;
+/*    Change the image */
   background-image: url(img/full-bg-07.jpg);
   background-size: cover;
   background-position: center;
@@ -592,6 +594,7 @@ section#testimonials {
 
 section#contact {
   height: 100vh;
+/*    Change the image*/
   background-image: url("img/full-bg-03.jpg");
   background-repeat: no-repeat;
   display: flex;
